@@ -1,40 +1,30 @@
 # Owe — GitHub Pages site
 
-Static pages for App Store Connect and user support. No custom domain required.
+Live site: **https://ravichandran-rajendran.github.io/owe-app/**
 
 ## Pages
 
-| File | Purpose | Example URL |
-|------|---------|-------------|
-| `index.html` | Support / landing | `https://YOUR_USERNAME.github.io/REPO/` |
-| `privacy.html` | Privacy Policy (required) | `https://YOUR_USERNAME.github.io/REPO/privacy.html` |
-| `terms.html` | Terms of Use | `https://YOUR_USERNAME.github.io/REPO/terms.html` |
+| File | App Store use | Live URL |
+|------|---------------|----------|
+| `index.html` | Support URL | https://ravichandran-rajendran.github.io/owe-app/ |
+| `privacy.html` | Privacy Policy URL | https://ravichandran-rajendran.github.io/owe-app/privacy.html |
+| `terms.html` | Terms / EULA | https://ravichandran-rajendran.github.io/owe-app/terms.html |
 
-Replace `YOUR_USERNAME` and `REPO` with your GitHub username and repository name.
+These URLs are wired in `AppSupportConfiguration.swift` and Settings → Legal.
 
-## Enable GitHub Pages
+## App Store Connect checklist
 
-1. Push this repo to GitHub.
-2. Open the repo on GitHub → **Settings** → **Pages**.
-3. Under **Build and deployment**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` (or your default branch)
-   - **Folder:** `/docs`
-4. Save. GitHub will show your live URL in 1–2 minutes.
+- [ ] **Privacy Policy URL:** `.../privacy.html`
+- [ ] **Support URL:** `.../`
+- [ ] Create IAP: `com.ravicraj.loancalculator.pro.lifetime` ($2.99, Non-Consumable)
+- [ ] Enable **iCloud** capability + CloudKit container `iCloud.com.ravicraj.loancalculator` in Apple Developer portal
+- [ ] Enable **App Groups** `group.com.ravicraj.loancalculator` for app + widget targets
+- [ ] Set `appStoreID` in `AppSupportConfiguration.swift` after App Store listing is created
 
-## App Store Connect
+## GitHub Pages settings
 
-Use these URLs when submitting **Owe**:
+- **Source:** branch `main`, folder **`/docs`**
 
-- **Privacy Policy URL:** `https://YOUR_USERNAME.github.io/REPO/privacy.html`
-- **Support URL:** `https://YOUR_USERNAME.github.io/REPO/` (or the same as privacy)
-- **Marketing URL (optional):** `https://YOUR_USERNAME.github.io/REPO/`
+## Custom domain (optional)
 
-## Custom domain (optional later)
-
-You can add a custom domain in GitHub Pages settings without changing these files.
-
-## Edit content
-
-- Support email: `ravicraj@zohomail.in` (search/replace if it changes)
-- Update “Last updated” dates on `privacy.html` and `terms.html` when you change policies
+Add in GitHub Pages settings without changing these files.
