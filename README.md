@@ -16,10 +16,12 @@ These URLs are wired in `AppSupportConfiguration.swift` and Settings → Legal.
 
 - [ ] **Privacy Policy URL:** `.../privacy.html`
 - [ ] **Support URL:** `.../`
-- [ ] Create IAP: `com.ravicraj.loancalculator.pro.lifetime` ($2.99, Non-Consumable)
+- [ ] Subscriptions: `com.ravicraj.loancalculator.pro.monthly`, `com.ravicraj.loancalculator.pro.yearly`
+- [ ] Grandfathered lifetime (no longer sold): `com.ravicraj.loancalculator.pro.lifetime`
 - [ ] Enable **iCloud** capability + CloudKit container `iCloud.com.ravicraj.loancalculator` in Apple Developer portal
 - [ ] Enable **App Groups** `group.com.ravicraj.loancalculator` for app + widget targets
 - [ ] Set `appStoreID` in `AppSupportConfiguration.swift` after App Store listing is created
+- [ ] After editing legal pages, push to `main` so GitHub Pages updates the live URLs
 
 ## GitHub Pages settings
 
